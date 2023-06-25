@@ -7,6 +7,7 @@
     <meta name="description" content="Lockwood - Quality Furniture for Every Home">
     <meta name="keywords" content="furniture, quality furniture, wood furniture, home furniture, best furniture">
     <meta name="author" content="Lockwood Africa LTD">
+    <!-- <meta http-equiv="refresh" content="600"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icons/lockwood-logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/lockwood-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icons/lockwood-logo.png">
@@ -203,19 +204,19 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="/assets/img/forza_horizon (1).jpg" style="width:100%">
+                    <img src="./assets/img/forza_horizon (1).jpg" style="width:100%">
                     <div class="hero-text brand5-color">Caption Text</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="/assets/img/forza_horizon (2).jpg" style="width:100%">
+                    <img src="./assets/img/forza_horizon (2).jpg" style="width:100%">
                     <div class="hero-text brand5-color">Caption Two</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="/assets/img/forza_horizon (3).jpg" style="width:100%">
+                    <img src="./assets/img/forza_horizon (3).jpg" style="width:100%">
                     <div class="hero-text brand5-color">Caption Three</div>
                 </div>
 
@@ -431,7 +432,10 @@
     <section id="objectives" class="fade-in-animation">
         <div class="objectives-div">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.687545147701!2d36.90962507406386!3d-1.364141635714262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d47f7487901%3A0x84c4702b0facfcd5!2sLockwood%20Africa%20Ltd!5e0!3m2!1sen!2ske!4v1687460333135!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.687545147701!2d36.90962507406386!3d-1.364141635714262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d47f7487901%3A0x84c4702b0facfcd5!2sLockwood%20Africa%20Ltd!5e0!3m2!1sen!2ske!4v1687460333135!5m2!1sen!2ske"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="vertical-line"></div>
             <div class="objectives">
@@ -453,7 +457,7 @@
             <div class="footer">
                 <div class="footer-contact">
                     <div class="footer-contact-title">
-                        <h4>Contact Us</h4>
+                        <h4 class="brand2-color">Contact Us</h4>
                     </div>
                     <div class="footer-contact-text">
                         <p class="center">Two Rivers Mall</p>
@@ -464,24 +468,39 @@
                 </div>
                 <div class="footer-form">
                     <div class="form">
-                        <h3>Keep In Touch</h3>
-                        <form action="" method="post">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
+                        <h3 class="brand2-color">Keep In Touch</h3>
+                        <br>
+                        <!-- <form action="" method="post">
+                            <input type="text" name="name" id="name" placeholder="Name" class="name">
+                            <input type="email" name="email" id="email" placeholder="Email" class="email">
                             <button type="submit">Subscribe</button>
+                        </form> -->
+                        <form action="" method="post">
+                            <label class="name" for="name-field">
+                                Name:
+                                <!-- <br> -->
+                                <input type="text" id="name-field" placeholder="Name"/>
+                            </label>
+                            <label class="email" for="email-field">
+                                Email:
+                                <!-- <br> -->
+                                <input type="email" id="email-field" placeholder="Email"/>
+                            </label>
+                            <button type="submit" class="brand2-color">Submit</button>
                         </form>
                     </div>
-                    <div class="copyright">
-                        <p>&copy;2019 LOCKWOOD AFRICA LTD.</p>
-                    </div>
+
                 </div>
                 <div class="social-media-icons">
-                    <ul class="brand-color-background">
-                            <li><a href="#!"><img src="./assets/img/icons/facebook.svg" alt="Facebook"></a></li>
-                            <li><a href="#!"><img src="./assets/img/icons/instagram.svg" alt="Instagram"></a></li>
-                            <li><a href="#!"><img src="./assets/img/icons/twitter.svg" alt="Twitter"></a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="#!"><img src="./assets/img/icons/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#!"><img src="./assets/img/icons/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#!"><img src="./assets/img/icons/twitter.svg" alt="Twitter"></a></li>
+                    </ul>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;2019 LOCKWOOD AFRICA LTD.</p>
             </div>
         </footer>
     </section>
