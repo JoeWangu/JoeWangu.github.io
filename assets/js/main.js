@@ -1,3 +1,4 @@
+$(document).ready(function () {
 (function ($) { // Begin jQuery
     $(function () { // DOM ready
         // If a link has a dropdown, add sub menu toggle.
@@ -81,9 +82,9 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// let intervalId = setInterval(function () {
-//     plusSlides(1);
-// }, 3000);
+let intervalId = setInterval(function () {
+    plusSlides(1);
+}, 5000);
 
 function plusSlides(n) {
     showSlides((slideIndex += n));
@@ -103,7 +104,8 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     slides.hide();
-    slides.eq(slideIndex - 1).show();
+    slides.removeClass("active");
+    slides.eq(slideIndex - 1).show().addClass("active");
 
     let dots = $(".dot");
     dots.removeClass("active");
@@ -111,8 +113,8 @@ function showSlides(n) {
 }
 
 let slideshowContainer = $(".image").eq(0);
-// slideshowContainer.mouseover(stopSlideshow);
-// slideshowContainer.mouseout(startSlideshow);
+slideshowContainer.mouseover(stopSlideshow);
+slideshowContainer.mouseout(startSlideshow);
 
 function stopSlideshow() {
     clearInterval(intervalId);
@@ -121,7 +123,7 @@ function stopSlideshow() {
 function startSlideshow() {
     intervalId = setInterval(function () {
         plusSlides(1);
-    }, 3000);
+    }, 5000);
 }
 
 // fade in animation for cards section
@@ -139,4 +141,32 @@ window.addEventListener('scroll', function () {
         //     element.classList.remove('fade-in')
         // }
     }
+});
+
+// featured section js
+// function changeMainImage(image) {
+//     var mainImage = document.getElementById("main-image");
+//     mainImage.src = image.src;
+//     mainImage.alt = image.alt;
+// }
+
+// $(document).ready(function () {
+// $('.slide').click(function () {
+//     var imageSrc = $(this).attr('src');
+//     var imageAlt = $(this).attr('alt');
+//     $('#main-image').attr('src', imageSrc);
+//     $('#main-image').attr('alt', imageAlt);
+// });
+// });
+
+
+    $('.slide').click(function () {
+        $('.slide').removeClass('active'); // Remove 'active' class from all slides
+        $(this).addClass('active'); // Add 'active' class to the clicked slide
+
+        var imageSrc = $(this).attr('src');
+        var imageAlt = $(this).attr('alt');
+        $('#main-image').attr('src', imageSrc);
+        $('#main-image').attr('alt', imageAlt);
+    });
 });
