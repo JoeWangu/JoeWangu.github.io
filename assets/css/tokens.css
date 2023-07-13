@@ -1,7 +1,7 @@
 :root {
   --md-source: #7d4802;
   /* primary */
-  --md-ref-palette-primary0: #000000;
+  --md-ref-palette-primary0: #333;
   --md-ref-palette-primary10: #2d1600;
   --md-ref-palette-primary20: #4a2800;
   --md-ref-palette-primary25: #5a3200;
@@ -18,7 +18,7 @@
   --md-ref-palette-primary99: #fffbff;
   --md-ref-palette-primary100: #ffffff;
   /* secondary */
-  --md-ref-palette-secondary0: #000000;
+  --md-ref-palette-secondary0: #333;
   --md-ref-palette-secondary10: #2c1600;
   --md-ref-palette-secondary20: #492900;
   --md-ref-palette-secondary25: #593200;
@@ -35,7 +35,7 @@
   --md-ref-palette-secondary99: #fffbff;
   --md-ref-palette-secondary100: #ffffff;
   /* tertiary */
-  --md-ref-palette-tertiary0: #000000;
+  --md-ref-palette-tertiary0: #333;
   --md-ref-palette-tertiary10: #231b00;
   --md-ref-palette-tertiary20: #3b2f00;
   --md-ref-palette-tertiary25: #483a00;
@@ -52,7 +52,7 @@
   --md-ref-palette-tertiary99: #fffbff;
   --md-ref-palette-tertiary100: #ffffff;
   /* neutral */
-  --md-ref-palette-neutral0: #000000;
+  --md-ref-palette-neutral0: #333;
   --md-ref-palette-neutral10: #251a00;
   --md-ref-palette-neutral20: #3f2e00;
   --md-ref-palette-neutral25: #4d3800;
@@ -69,7 +69,7 @@
   --md-ref-palette-neutral99: #fffbff;
   --md-ref-palette-neutral100: #ffffff;
   /* neutral-variant */
-  --md-ref-palette-neutral-variant0: #000000;
+  --md-ref-palette-neutral-variant0: #333;
   --md-ref-palette-neutral-variant10: #231a11;
   --md-ref-palette-neutral-variant20: #392e25;
   --md-ref-palette-neutral-variant25: #45392f;
@@ -86,7 +86,7 @@
   --md-ref-palette-neutral-variant99: #fffbff;
   --md-ref-palette-neutral-variant100: #ffffff;
   /* error */
-  --md-ref-palette-error0: #000000;
+  --md-ref-palette-error0: #333;
   --md-ref-palette-error10: #410002;
   --md-ref-palette-error20: #690005;
   --md-ref-palette-error25: #7e0007;
