@@ -30,6 +30,7 @@
     --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-light);
     --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light);
     --md-sys-color-scrim: var(--md-sys-color-scrim-light);
+    --md-custom-color-bg: var(--md-custom-color-bg-light);
 }
 
 /* dark mode */
@@ -65,5 +66,6 @@
     --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-dark);
     --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-dark);
     --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
+    --md-custom-color-bg: var(--md-custom-color-bg-dark);
 }
 

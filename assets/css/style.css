@@ -6,10 +6,15 @@
     box-sizing: border-box;
 }
 
+a {
+    color: var(--md-sys-color-secondary);
+}
+
 body {
     background-color: var(--bg-color);
     font-family: Arial, sans-serif;
 }
+
 
 /* .navbar {
     background-color: #333;
@@ -26,15 +31,7 @@ body {
 /*------------------------------------------------------------------------------------------------------------------ 
 .                                                    NAVIGATION BAR
 ---------------------------------------------------------------------------------------------------------------------- */
-.brand {
-    font-weight: bold;
-    font-size: 27px;
-}
-
-.site-header__top {
-    background-color: #def7ff;
-}
-
+/*  
 .site-header__top ul {
     display: flex;
 }
@@ -295,8 +292,27 @@ body {
 .button--icon {
     min-width: initial;
     padding: .5rem
-}
+} */
 
 /*------------------------------------------------------------------------------------------------------------------ 
 .                                                    NAVIGATION BAR
 ---------------------------------------------------------------------------------------------------------------------- */
+div.top-nav{
+    max-height: 80px;
+}
+
+div.top-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+div.top-nav-wrapper a{
+    padding: 20px;
+    margin: 0 30px;
+}
+
+div.logo {
+    width: 100px;
+}
