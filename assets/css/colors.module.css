@@ -245,3 +245,7 @@
 .bg-text{
   color: var(--md-custom-color-bg);
 }
+
+.black-bg{
+  background-color: #a8a8a8;
+}
