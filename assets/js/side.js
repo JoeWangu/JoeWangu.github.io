@@ -111,3 +111,51 @@ themeIcon.on('click', () => {
 //         dropdownOpen = false;
 //     })
 // });
+
+// $(document).ready(function () {
+//     // If a link has a dropdown, add sub menu toggle.
+//     $('.dropdown a:not(:only-child)').click(function (e) {
+//         // $('#cn-overlay').removeClass('on-overlay');
+//         $(this).siblings('.hide').slideToggle().toggleClass();
+//         // Close one dropdown when selecting another
+//         $('.hide').not($(this).siblings()).hide();
+//         e.stopPropagation();
+//     });
+
+//     // Clicking away from dropdown will remove the dropdown class
+//     $(document).on('click', function (e) {
+//         if (!$(e.target).closest('.dropdown').length) {
+//             $('.hide').hide();
+//             $('#cn-overlay').removeClass('on-overlay');// Hide the overlay
+//         }
+//     });
+// });
+
+var isDropdownOpen = false;
+
+$(document).ready(function () {
+    // If a link has a dropdown, add sub menu toggle.
+    $('.dropdown a:not(:only-child)').click(function (e) {
+        $(this).siblings('.hide').slideToggle();
+        isDropdownOpen = !isDropdownOpen
+        if (isDropdownOpen) {
+            $('#cn-overlay').addClass('on-overlay'); // Show the overlay
+        }
+        else {
+            $('#cn-overlay').removeClass('on-overlay'); // Hide the overlay
+        }
+        // Close one dropdown when selecting another
+        $('.hide').not($(this).siblings()).hide();
+        e.stopPropagation();
+    });
+
+    // Clicking away from dropdown will remove the dropdown class
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.dropdown').length) {
+            $('.hide').hide();
+            $('#cn-overlay').removeClass('on-overlay');// Hide the overlay
+            isDropdownOpen = !isDropdownOpen
+        }
+    });
+});
+

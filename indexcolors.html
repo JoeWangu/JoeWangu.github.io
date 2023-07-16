@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b2ff39841e.js" crossorigin="anonymous"></script>
     <style>
         body {
             display: flex;
@@ -22,12 +23,17 @@
             width: 100%;
             height: 50px;
         }
+        i{
+            font-size: 50px;
+        }
     </style>
     <title>Document</title>
 </head>
 
-<body>
-    <button id="themeBtn"><i id="themeIcon">☀️</i></button>
+<body class="background">
+    <i id="themeIcon">
+        <span class="tooltip-text">Switch to dark mode</span>
+    </i>
     <div>
         <!-- primary -->
         <h1>PRIMARY</h1>
@@ -141,7 +147,8 @@
     </div>
 
 
-    <button id="themeBtn"><i id="themeIcon">☀️</i></button>
+    <!-- <i id="themeIcon"></i> -->
+    <script src="./assets/js/jquery-3.6.0.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/side.js"></script>
 </body>

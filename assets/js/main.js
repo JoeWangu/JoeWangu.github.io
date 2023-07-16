@@ -1,29 +1,27 @@
-$(document).ready(function () {
-    let dropdownOpen = false; // Variable to keep track of the dropdown state
-    // If a link has a dropdown, add sub menu toggle.
-    $('.dropdown a:not(:only-child)').click(function (e) {
-        $(this).siblings('.hide').slideToggle();
-        // if (!dropdownOpen) {
-        //     $('#cn-overlay').removeClass('on-overlay');
-        // }
-        if ($(this).siblings('.hide').css('display')==='none') {
-            $('#cn-overlay').removeClass('on-overlay'); // Hide the overlay
-            dropdownOpen = false;
-        } else {
-            $('#cn-overlay').addClass('on-overlay'); // Show the overlay
-            dropdownOpen = true;
-        }
-        // Close one dropdown when selecting another
-        $('.hide').not($(this).siblings()).hide();
-        e.stopPropagation();
-    });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function () {
-        $('.hide').hide();
-        $('#cn-overlay').removeClass('on-overlay');// Hide the overlay
-        dropdownOpen = false;
-    })
-});
+// $(document).ready(function () {
+//     // If a link has a dropdown, add sub menu toggle.
+//     $('.dropdown a:not(:only-child)').click(function (e) {
+//         // $('#cn-overlay').removeClass('on-overlay');
+//         $(this).siblings('.hide').slideToggle();
+//         if ($(this).siblings('.hide').css('display')==='none') {
+//                 $('#cn-overlay').removeClass('on-overlay'); // Hide the overlay
+//         }
+//         else {
+//                 $('#cn-overlay').addClass('on-overlay'); // Show the overlay
+//             }
+//         // Close one dropdown when selecting another
+//         $('.hide').not($(this).siblings()).hide();
+//         e.stopPropagation();
+//     });
+
+//     // Clicking away from dropdown will remove the dropdown class
+//     $('html').click(function () {
+//         $('.hide').hide();
+//         $('#cn-overlay').removeClass('on-overlay');// Hide the overlay
+//     })
+// });
+
+
 // toggle bottom navbar
 // (function () {
     // let overlay = document.getElementById('cn-overlay');

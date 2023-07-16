@@ -90,7 +90,7 @@ div.nav-link-wrapper {
 /* overlay */
 .cn-overlay {
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 80px);
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     /* top: 0; */
@@ -98,6 +98,7 @@ div.nav-link-wrapper {
     bottom: 0;
     right: 0;
     opacity: 0;
+    /* display: none; */
     visibility: hidden;
     transition: all .3s ease;
     z-index: 2;
@@ -169,5 +170,5 @@ li.bottom-nav-link div a {
 .hide {
     display: none;
     /* background-color: rgba(0, 0, 0, .9); */
-    background-color: var(--md-sys-color-background);
+    background-color: var(--md-sys-color-on-surface);
 }
