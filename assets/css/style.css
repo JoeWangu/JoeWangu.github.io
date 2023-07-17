@@ -352,6 +352,7 @@ li.bottom-nav-link div a {
     opacity: .3;
     transform: translate3d(-100%, 0, 0)scale(.97);
 }
+
 .side-menu-container {
     overflow: hidden;
 }
@@ -426,6 +427,7 @@ li.bottom-nav-link div a {
         transform: translate3d(0, 0, 0)scale(1);
     }
 }
+
 /*Nav Shrinking Closed Effect*/
 .side-nav.close {
     opacity: .3;
@@ -446,6 +448,23 @@ li.bottom-nav-link div a {
         transform: translate3d(-100%, 0, 0)scale(.97);
     }
 }
+
+div.side-menu-logo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+div.side-menu-logo span:first-child {
+    display: inline-block;
+}
+
+div.side-menu-logo span:last-child {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
 
 @media screen and (max-width:810px) {}
 
