@@ -29,9 +29,10 @@ a {
     font-family: Arial, sans-serif;
 } */
 
-#themeIcon:hover{
+#themeIcon:hover {
     cursor: pointer;
 }
+
 #themeIcon {
     position: relative;
 }
@@ -112,7 +113,7 @@ div.nav-link-wrapper {
 }
 
 /* bottom */
-div.bottom-nav-wrapper{
+div.bottom-nav-wrapper {
     height: 40px;
 }
 
@@ -126,7 +127,7 @@ div.bottom-nav-wrapper ul li {
     user-select: none;
 }
 
-div.bottom-nav-wrapper ul li a i{
+div.bottom-nav-wrapper ul li a i {
     font-size: 12px
 }
 
@@ -170,61 +171,61 @@ li.bottom-nav-link div a {
 .                                                    BURGER MENU
 ---------------------------------------------------------------------------------------------------------------------- */
 
-#burger-toggle {
+.burger-toggle {
     position: absolute;
     appearance: none;
     opacity: 0;
 }
 
-#burger-toggle:checked~.menu {
+.burger-toggle:checked~.menu {
     opacity: 1;
     visibility: visible;
 }
 
-#burger-toggle:checked~.menu .menu-nav-link span div,
-#burger-toggle:checked~.menu img,
-#burger-toggle:checked~.menu .title p {
+.burger-toggle:checked~.menu .menu-nav-link span div,
+.burger-toggle:checked~.menu img,
+.burger-toggle:checked~.menu .title p {
     transform: translateY(0);
     transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
 }
 
-#burger-toggle:checked~.menu .image-link:nth-child(1) img {
+.burger-toggle:checked~.menu .image-link:nth-child(1) img {
     transition-delay: 0.18s;
 }
 
-#burger-toggle:checked~.menu .image-link:nth-child(2) img {
+.burger-toggle:checked~.menu .image-link:nth-child(2) img {
     transition-delay: 0.26s;
 }
 
-#burger-toggle:checked~.menu .image-link:nth-child(3) img {
+.burger-toggle:checked~.menu .image-link:nth-child(3) img {
     transition-delay: 0.34s;
 }
 
-#burger-toggle:checked~.menu .image-link:nth-child(4) img {
+.burger-toggle:checked~.menu .image-link:nth-child(4) img {
     transition-delay: 0.42s;
 }
 
-#burger-toggle:checked~.burger-menu .line::after {
+.burger-toggle:checked~.burger-menu .line::after {
     transform: translateX(0);
 }
 
-#burger-toggle:checked~.burger-menu .line:nth-child(1) {
+.burger-toggle:checked~.burger-menu .line:nth-child(1) {
     transform: translateY(calc(4em / 5)) rotate(45deg);
 }
 
-#burger-toggle:checked~.burger-menu .line:nth-child(2) {
+.burger-toggle:checked~.burger-menu .line:nth-child(2) {
     transform: scaleX(0);
 }
 
-#burger-toggle:checked~.burger-menu .line:nth-child(3) {
+.burger-toggle:checked~.burger-menu .line:nth-child(3) {
     transform: translateY(calc(4em / -5)) rotate(-45deg);
 }
 
 .burger-menu {
-    position: fixed;
+    position: relative;
     /* top: 5vh;
     left: 5vw; */
-    z-index: 100;
+    /* z-index: 100; */
     /* display: block; */
     width: 4em;
     height: 4em;
@@ -237,7 +238,7 @@ li.bottom-nav-link div a {
     left: 25%;
     width: 50%;
     height: 3px;
-    background: rgba(43, 61, 79, 0.3);  
+    background: rgba(43, 61, 79, 0.3);
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
@@ -279,8 +280,257 @@ li.bottom-nav-link div a {
     transform: translateX(0);
 }
 
-/* @media screen and (max-width:810px) {
-    .medium-hide{
-        display: none!important;
+/* navbar media queries */
+
+@media screen and (max-width:810px) {
+    div.top-nav-wrapper {
+        justify-content: space-around;
     }
-} */
+
+    div.nav-link-wrapper {
+        width: auto;
+    }
+
+    /* bottom */
+    div.bottom-nav-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width:419px) {
+    div.top-nav-wrapper a {
+        font-size: .9em;
+    }
+
+    div.logo img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .burger-menu {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .burger-toggle:checked~.burger-menu .line:nth-child(1) {
+        transform: translateY(calc(2.5em / 5)) rotate(45deg);
+    }
+
+    .burger-toggle:checked~.burger-menu .line:nth-child(3) {
+        transform: translateZ(calc(2.5em / 5)) rotate(-45deg);
+    }
+
+    .burger-menu .line:nth-child(1) {
+        top: 30%;
+    }
+
+    .burger-menu .line:nth-child(2) {
+        top: 40%;
+    }
+
+    .burger-menu .line:nth-child(3) {
+        top: 50%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------ 
+.                                                    SIDE BAR NAVIGATION
+---------------------------------------------------------------------------------------------------------------------- */
+.side-nav {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-color: #1d2d35;
+    border-radius: 8px;
+    z-index: 10;
+    /* starting point */
+    opacity: .3;
+    transform: translate3d(-100%, 0, 0)scale(.97);
+}
+@media screen and (max-width:810px) {
+    .side-menu-container {
+        overflow: hidden;
+    }
+
+    .side-nav li {
+        display: inline-block;
+    }
+
+    .side-nav li a {
+        font-size: 11px;
+        color: #9aa6af;
+        padding: 24px 15px;
+        display: block;
+    }
+
+    .side-nav li a:hover {
+        color: #000;
+    }
+
+    .side-nav ul {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .side-nav li {
+        display: block;
+        float: none;
+    }
+
+    .side-nav li a {
+        padding: 22px 25px;
+        letter-spacing: 3px;
+        font-size: 14px;
+    }
+
+    .side-nav li a.logo {
+        display: none;
+    }
+
+    .side-nav li a.active {
+        color: #fff;
+        background-color: #141e23;
+    }
+
+    .side-nav li a:hover {
+        color: #fff;
+        background-color: #19252c;
+    }
+
+    .side-nav li:first-child a.active,
+    .side-nav li:first-child a:hover {
+        border-radius: 10px 0 0 0;
+    }
+/*Nav Expanding Open Effect*/
+.side-nav.open {
+    opacity: 1;
+    /* display: initial; */
+
+    transform: translate3d(0, 0, 0)scale(1);
+    animation: slideIn .35s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: .3;
+        transform: translate3d(-100%, 0, 0)scale(.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)scale(1);
+    }
+}
+/*Nav Shrinking Closed Effect*/
+.side-nav.close {
+    opacity: .3;
+    /* display: none; */
+
+    transform: translate3d(-100%, 0, 0)scale(.97);
+    animation: slideOut .35s ease-in-out;
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)scale(1);
+    }
+
+    100% {
+        opacity: .3;
+        transform: translate3d(-100%, 0, 0)scale(.97);
+    }
+}
+
+
+}
+
+
+/* ---------------------------------------------------TO DELETE SOON --------------------------------------------------------------------------*/
+/*  Removable CSS  */
+
+.header-section,
+.body-section,
+.footer-section {
+    padding: 20px;
+}
+
+.header-section {
+    background-color: #ffffff;
+}
+
+.body-section {
+    background-color: #f4f5f6;
+}
+
+.footer-section {
+    background-color: #dadee1;
+}
+
+.placefiller {
+    text-align: center;
+    font-size: 20px;
+    border: 1px dashed rgba(190, 196, 202, 0.5);
+}
+
+.header-section .placefiller {
+    line-height: 300px;
+}
+
+.body-section .placefiller {
+    line-height: 900px;
+}
+
+.footer-section .placefiller {
+    line-height: 200px;
+    border: 1px dashed rgba(190, 196, 202, 0.9);
+}
+
+
+
+
+    /*Nav Expanding Open Effect*/
+    /* .side-nav.open {
+        opacity: 1;
+        display: initial;
+    
+        transform: translate3d(0, 0, 0)scale(1);
+        animation: slideIn .35s ease-in-out;
+    }
+    
+    @keyframes slideIn {
+        0% {
+            opacity: .3;
+            transform: translate3d(5%, 0, 0)scale(.97);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)scale(1);
+        }
+    }
+    /*Nav Shrinking Closed Effect
+    .side-nav.close {
+        opacity: .3;
+        display: none;
+    
+        transform: translate3d(5%, 0, 0)scale(.97);
+        animation: slideOut .3s ease-in-out;
+    }
+    
+    @keyframes slideOut {
+        0% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)scale(1);
+        }
+    
+        100% {
+            opacity: .3;
+            transform: translate3d(5%, 0, 0)scale(.97);
+        }
+    } */
