@@ -406,8 +406,6 @@ li.bottom-nav-link div a {
     border-radius: 10px 0 0 0;
 }
 
-@media screen and (max-width:810px) {
-
 /*Nav Expanding Open Effect*/
 .side-nav.open {
     opacity: 1;
@@ -449,8 +447,7 @@ li.bottom-nav-link div a {
     }
 }
 
-
-}
+@media screen and (max-width:810px) {}
 
 
 /* ---------------------------------------------------TO DELETE SOON --------------------------------------------------------------------------*/
@@ -492,47 +489,3 @@ li.bottom-nav-link div a {
     line-height: 200px;
     border: 1px dashed rgba(190, 196, 202, 0.9);
 }
-
-
-
-
-    /*Nav Expanding Open Effect*/
-    /* .side-nav.open {
-        opacity: 1;
-        display: initial;
-    
-        transform: translate3d(0, 0, 0)scale(1);
-        animation: slideIn .35s ease-in-out;
-    }
-    
-    @keyframes slideIn {
-        0% {
-            opacity: .3;
-            transform: translate3d(5%, 0, 0)scale(.97);
-        }
-    
-        100% {
-            opacity: 1;
-            transform: translate3d(0, 0, 0)scale(1);
-        }
-    }
-    /*Nav Shrinking Closed Effect
-    .side-nav.close {
-        opacity: .3;
-        display: none;
-    
-        transform: translate3d(5%, 0, 0)scale(.97);
-        animation: slideOut .3s ease-in-out;
-    }
-    
-    @keyframes slideOut {
-        0% {
-            opacity: 1;
-            transform: translate3d(0, 0, 0)scale(1);
-        }
-    
-        100% {
-            opacity: .3;
-            transform: translate3d(5%, 0, 0)scale(.97);
-        }
-    } */
