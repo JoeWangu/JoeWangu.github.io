@@ -32,6 +32,7 @@
     --md-sys-color-scrim: var(--md-sys-color-scrim-light);
     --md-custom-color-bg: var(--md-custom-color-bg-light);
     --md-custom-color-a: var(--md-custom-color-a-light);
+    --md-custom-color-hide-bg: var(--md-custom-color-hide-bg-light);
 }
 
 /* dark mode */
@@ -69,5 +70,6 @@
     --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
     --md-custom-color-bg: var(--md-custom-color-bg-dark);
     --md-custom-color-a: var(--md-custom-color-a-dark);
+    --md-custom-color-hide-bg: var(--md-custom-color-hide-bg-dark);
 }
 

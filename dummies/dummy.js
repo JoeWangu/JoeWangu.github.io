@@ -309,3 +309,28 @@ $(function () {
     });
 
 });
+
+// other
+        // -----------------------------------------------------------------------------------------------------------
+        // ------------------------------------------- ADJUST NAVBAR IN SMALLER SCREENS -----------------------------------------
+        // -----------------------------------------------------------------------------------------------------------
+        // (function () {
+        //     $(window).on('resize', checkPosition);
+
+        //     function checkPosition() {
+        //         if ($(window).innerWidth() <= 810) {
+        //             $('.top-nav-wrapper .nav-link-wrapper:first').empty().html(`<input  type="checkbox" id="burger-toggle" class="burger-toggle">
+        //             <label for= "burger-toggle" class= "burger-menu">
+        //             <div class="line"></div>
+        //             <div class="line"></div>
+        //             <div class="line"></div>
+        //             </label > `);
+        //         } else {
+        //             $('.top-nav-wrapper .nav-link-wrapper:first').empty().html(`<a href="#!">
+        //         <i class="fa-solid fa-home" aria-hidden="true"></i>
+        //         <p>Home</p>
+        //     </a>`);
+        //         }
+        //     }
+        // })
+        // checkPosition();

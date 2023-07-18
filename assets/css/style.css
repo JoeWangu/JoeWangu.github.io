@@ -51,7 +51,7 @@ a {
 
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    /* z-index: 1; */
     bottom: 150%;
     left: 50%;
     margin-left: -60px;
@@ -127,7 +127,7 @@ div.bottom-nav-wrapper {
 
 div.bottom-nav-wrapper ul {
     display: flex;
-    z-index: 10;
+    z-index: 3;
 }
 
 div.bottom-nav-wrapper ul li {
@@ -140,7 +140,7 @@ div.bottom-nav-wrapper ul li a i {
     font-size: 12px
 }
 
-li.bottom-nav-link div {
+li.bottom-nav-link div.hide {
     position: absolute;
     width: 80%;
     /* height: -moz-fit-content; */
@@ -152,7 +152,7 @@ li.bottom-nav-link div {
     margin-top: 10px;
 }
 
-li.bottom-nav-link div ul {
+li.bottom-nav-link div.hide ul {
     display: grid;
     grid-template-columns: 200px 200px;
 }
@@ -166,17 +166,17 @@ li.bottom-nav-link .link-title {
     font-family: montserrat;
 }
 
-li.bottom-nav-link div a {
+div.bottom-nav li.bottom-nav-link div.hide a {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 10px;
 }
 
-.hide {
+div.hide {
     display: none;
     /* background-color: var(--md-sys-color-on-surface); */
-    background-color: #f8fdff;
+    background-color: var(--md-custom-color-hide-bg);
 }
 
 /*------------------------------------------------------------------------------------------------------------------ 
@@ -341,79 +341,80 @@ li.bottom-nav-link div a {
 /*------------------------------------------------------------------------------------------------------------------ 
 .                                                    SIDE BAR NAVIGATION
 ---------------------------------------------------------------------------------------------------------------------- */
-.side-nav {
+nav.side-nav {
     /* position: absolute; */
-    width: 70%;
+    width: 350px;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
     margin: 0;
-    background-color: #1d2d35;
+    background-color: var(--md-custom-color-hide-bg);
     border-radius: 8px;
-    z-index: 10;
-    /* overflow: scroll; */
+    z-index: 4;
+    overflow: scroll;
     /* starting point */
     opacity: .3;
     transform: translate3d(-100%, 0, 0)scale(.97);
 }
 
-.side-menu-container {
+div.side-menu-container {
     overflow: hidden;
 }
 
-.side-nav li {
+nav.side-nav li {
     display: inline-block;
 }
 
-.side-nav li a {
-    font-size: 11px;
-    color: #9aa6af;
-    padding: 24px 15px;
-    display: block;
+nav.side-nav li a {
+    /* color: #9aa6af; */
+    /* padding: 10px 15px; */
+    /* display: block; */
 }
-
-.side-nav li a:hover {
+nav.side-nav li a {
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+/* nav.side-nav li a:hover {
     color: #000;
+} */
+
+nav.side-nav ul li{
+    display: flex;
+    flex-direction: column;
 }
 
-.side-nav ul {
+nav.side-nav div.hide{
+    position: relative;
+}
+nav.side-nav div.hide ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .side-nav ul {
     height: 100%;
     overflow: scroll;
-}
+} */
 
-.side-nav li {
+nav.side-nav li {
     display: block;
-    float: none;
+    /* float: none; */
 }
 
-.side-nav li a {
-    padding: 22px 25px;
-    letter-spacing: 3px;
-    font-size: 14px;
-}
-
-.side-nav li a.logo {
-    display: none;
-}
-
-.side-nav li a.active {
-    color: #fff;
-    background-color: #141e23;
-}
-
-.side-nav li a:hover {
+nav.side-nav li a:hover {
     color: #fff;
     background-color: #19252c;
 }
 
-.side-nav li:first-child a.active,
-.side-nav li:first-child a:hover {
+nav.side-nav li:first-child a.active,
+nav.side-nav li:first-child a:hover {
     border-radius: 10px 0 0 0;
 }
 
 /*Nav Expanding Open Effect*/
-.side-nav.open {
+nav.side-nav.open {
     opacity: 1;
     /* display: initial; */
 
@@ -434,7 +435,7 @@ li.bottom-nav-link div a {
 }
 
 /*Nav Shrinking Closed Effect*/
-.side-nav.close {
+nav.side-nav.close {
     opacity: .3;
     /* display: none; */
 
@@ -474,7 +475,7 @@ div.side-menu-logo i{
     cursor: pointer;
 }
 
-.side-nav-icons{
+div.side-nav-icons{
     display: flex;
     justify-content: space-evenly;
     margin: 10px 0;
