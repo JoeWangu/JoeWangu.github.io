@@ -14,7 +14,8 @@
 }
 
 a {
-    color: var(--md-sys-color-secondary);
+    /* color: var(--md-sys-color-secondary); */
+    color: #141e23;
     cursor: pointer;
 }
 
@@ -172,7 +173,8 @@ li.bottom-nav-link div a {
 
 .hide {
     display: none;
-    background-color: var(--md-sys-color-on-surface);
+    /* background-color: var(--md-sys-color-on-surface); */
+    background-color: #f8fdff;
 }
 
 /*------------------------------------------------------------------------------------------------------------------ 
@@ -487,15 +489,15 @@ div.side-menu-logo i{
 }
 
 .header-section {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .body-section {
-    background-color: #f4f5f6;
+    /* background-color: #f4f5f6; */
 }
 
 .footer-section {
-    background-color: #dadee1;
+    /* background-color: #dadee1; */
 }
 
 .placefiller {
