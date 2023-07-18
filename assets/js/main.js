@@ -39,12 +39,12 @@ $(document).ready(function () {
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-                </label > `);        
+                </label > `);
         } else {
             $('.top-nav-wrapper .nav-link-wrapper:first').empty().html(`<a href="#!">
             <i class="fa-solid fa-home" aria-hidden="true"></i>
             <p>Home</p>
-        </a>`);        
+        </a>`);
         }
     }
     checkPosition();
@@ -60,22 +60,22 @@ $(document).ready(function () {
             return check;
         }
         var clickevent = mobilecheck() ? 'touchstart' : 'click';
-    
-        var items = $('.slide');
+
+        var items = $('.side-nav');
         var content = $('.content');
-    
+
         function open() {
             $(items).removeClass('close').addClass('open');
         }
-    
+
         function close() {
             $(items).removeClass('open').addClass('close');
         }
-    
-        $('#burger-toggle').on(clickevent, function (event) {
+
+        $('.burger-toggle').on(clickevent, function (event) {
             event.stopPropagation();
             event.preventDefault();
-            if (content.hasClass('open')) {
+            if (items.hasClass('open')) {
                 close();
             } else {
                 open();
@@ -83,12 +83,12 @@ $(document).ready(function () {
         });
         $('.fa-x').on(clickevent, function () {
             close();
-        });        
+        });
         content.click(function () {
-            if (content.hasClass('open')) {
+            if (items.hasClass('open')) {
                 close();
             }
         });
-    
+
     });
 });

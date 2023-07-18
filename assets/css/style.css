@@ -353,9 +353,9 @@ li.bottom-nav-link div a {
     transform: translate3d(-100%, 0, 0)scale(.97);
 }
 
-.side-menu-container {
+/* .side-menu-container {
     overflow: hidden;
-}
+} */
 
 .side-nav li {
     display: inline-block;
