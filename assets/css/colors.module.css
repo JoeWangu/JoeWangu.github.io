@@ -238,6 +238,8 @@
   color: var(--md-sys-color-scrim);
 }
 
+/* custom */
+
 .bg{
   background-color: var(--md-custom-color-bg);
 }

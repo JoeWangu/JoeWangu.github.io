@@ -2,8 +2,8 @@
 // ------------------------------------------- TOGGLE BETWEEN THEMES -----------------------------------------
 // -----------------------------------------------------------------------------------------------------------
 $(document).ready(function () {
-    const themeIcon = $("#themeIcon");
-    const tooltipText = $("#themeIcon .tooltip-text");
+    const themeIcon = $(".themeIcon");
+    const tooltipText = $(".themeIcon .tooltip-text");
 
     // Set the theme to light only if it hasn't been set before
     if (!localStorage.getItem('theme')) {
