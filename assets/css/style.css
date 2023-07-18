@@ -88,6 +88,14 @@ div.nav-link-wrapper {
     align-items: center;
 }
 
+div.nav-link-wrapper.big-screen {
+    display: flex;
+}
+
+#burger-toggle, .burger-menu {
+    display: none;
+}
+
 /* overlay */
 .cn-overlay {
     width: 100%;
@@ -171,53 +179,37 @@ li.bottom-nav-link div a {
 .                                                    BURGER MENU
 ---------------------------------------------------------------------------------------------------------------------- */
 
-.burger-toggle {
+#burger-toggle {
     position: absolute;
     appearance: none;
     opacity: 0;
 }
 
-.burger-toggle:checked~.menu {
+#burger-toggle:checked~.menu {
     opacity: 1;
     visibility: visible;
 }
 
-.burger-toggle:checked~.menu .menu-nav-link span div,
-.burger-toggle:checked~.menu img,
-.burger-toggle:checked~.menu .title p {
+#burger-toggle:checked~.menu .menu-nav-link span div,
+#burger-toggle:checked~.menu img,
+#burger-toggle:checked~.menu .title p {
     transform: translateY(0);
     transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
 }
 
-.burger-toggle:checked~.menu .image-link:nth-child(1) img {
-    transition-delay: 0.18s;
-}
-
-.burger-toggle:checked~.menu .image-link:nth-child(2) img {
-    transition-delay: 0.26s;
-}
-
-.burger-toggle:checked~.menu .image-link:nth-child(3) img {
-    transition-delay: 0.34s;
-}
-
-.burger-toggle:checked~.menu .image-link:nth-child(4) img {
-    transition-delay: 0.42s;
-}
-
-.burger-toggle:checked~.burger-menu .line::after {
+#burger-toggle:checked~.burger-menu .line::after {
     transform: translateX(0);
 }
 
-.burger-toggle:checked~.burger-menu .line:nth-child(1) {
+#burger-toggle:checked~.burger-menu .line:nth-child(1) {
     transform: translateY(calc(4em / 5)) rotate(45deg);
 }
 
-.burger-toggle:checked~.burger-menu .line:nth-child(2) {
+#burger-toggle:checked~.burger-menu .line:nth-child(2) {
     transform: scaleX(0);
 }
 
-.burger-toggle:checked~.burger-menu .line:nth-child(3) {
+#burger-toggle:checked~.burger-menu .line:nth-child(3) {
     transform: translateY(calc(4em / -5)) rotate(-45deg);
 }
 
@@ -294,6 +286,14 @@ li.bottom-nav-link div a {
     /* bottom */
     div.bottom-nav-wrapper {
         display: none;
+    }
+
+    div.nav-link-wrapper.big-screen {
+        display: none;
+    }
+    
+    #burger-toggle, .burger-menu {
+        display: initial;
     }
 }
 
@@ -461,11 +461,19 @@ div.side-menu-logo span:first-child {
 
 div.side-menu-logo span:last-child {
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: 10px;
 }
 
+div.side-menu-logo i{
+    cursor: pointer;
+}
 
+.side-nav-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
 @media screen and (max-width:810px) {}
 
 
