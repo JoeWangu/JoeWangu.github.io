@@ -18,6 +18,26 @@ a {
     cursor: pointer;
 }
 
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+/* .dropdown svg{
+    height: 12px;
+} */
+
+nav.side-nav span.themeIcon svg{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    float: right;
+}
+
+li.bottom-nav-link .themeIcon svg{
+    width: 20px;
+    height: 20px;
+}
 /* a:hover{
     color: var(--md-sys-color-primary-container);
     transition: .5s ease;
@@ -92,7 +112,8 @@ div.nav-link-wrapper.big-screen {
     display: flex;
 }
 
-#burger-toggle, .burger-menu {
+#burger-toggle,
+.burger-menu {
     display: none;
 }
 
@@ -295,8 +316,9 @@ div.hide {
     div.nav-link-wrapper.big-screen {
         display: none;
     }
-    
-    #burger-toggle, .burger-menu {
+
+    #burger-toggle,
+    .burger-menu {
         display: initial;
     }
 }
@@ -348,9 +370,9 @@ nav.side-nav {
     position: fixed;
     left: 0;
     top: 0;
-    margin: 0;
+    /* margin: 0; */
     background-color: var(--md-custom-color-hide-bg);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     z-index: 4;
     overflow: scroll;
     /* starting point */
@@ -372,15 +394,16 @@ nav.side-nav li a {
     font-size: 1em;
 }
 
-nav.side-nav ul li{
+nav.side-nav ul li {
     display: flex;
     flex-direction: column;
 }
 
-nav.side-nav div.hide{
+nav.side-nav div.hide {
     position: relative;
 }
-nav.side-nav div.hide ul{
+
+nav.side-nav div.hide ul {
     display: flex;
     flex-direction: column;
 }
@@ -463,18 +486,134 @@ div.side-menu-logo span:last-child {
     right: 10px;
 }
 
-div.side-menu-logo i{
+div.side-menu-logo i {
     cursor: pointer;
 }
 
-div.side-nav-icons{
+div.side-nav-icons {
     display: flex;
     justify-content: space-evenly;
     margin: 10px 0;
 }
-@media screen and (max-width:810px) {}
 
+/* @media screen and (max-width:810px) {} */
 
+/*------------------------------------------------------------------------------------------------------------------ 
+.                                                    SLIDESHOW
+---------------------------------------------------------------------------------------------------------------------- */
+div.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+div.mySlides {
+    position: absolute;
+    width: 100%;
+}
+
+div.mySlides img {
+    max-width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.ad {
+    display: none;
+}
+
+@media screen and (min-width:880px) {
+    .hero-wrapper{
+        display: flex;
+        gap: 10px;
+        margin: 10px 20px;
+    }
+
+    div.slideshow-container {
+        width: 900px;
+    }
+
+    div.ad {
+        display: block;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------ 
+.                                                    ITEMS
+---------------------------------------------------------------------------------------------------------------------- */
+div.items {
+    max-width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    /* position: relative; */
+}
+
+div.delivery-banner {
+    /* flex-basis: 150px; */
+    max-width: 1000px;
+    /* margin-inline: auto; */
+    margin: 10px auto;
+}
+
+div.delivery-banner img {
+    filter: grayscale(.2);
+    max-height: 70px;
+}
+
+div.item-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+div.item-list div {
+    flex-basis: 150px;
+    position: relative;
+}
+
+div.item-list h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: montserrat;
+    color: #fff;
+}
+
+@media screen and (min-width:880px) {
+    div.item-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div.item-list img {
+        height: 170px;
+    }
+}
 /* ---------------------------------------------------TO DELETE SOON --------------------------------------------------------------------------*/
 /*  Removable CSS  */
 

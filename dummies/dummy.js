@@ -334,3 +334,190 @@ $(function () {
         //     }
         // })
         // checkPosition();
+
+
+            // -----------------------------------------------------------------------------------------------------------
+    // -------------------------------------------  SLIDESHOW -----------------------------------------
+    // -----------------------------------------------------------------------------------------------------------
+    $(function () {
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides() {
+            showSlides((slideIndex += 1))
+        }
+
+        function prevSlides() {
+            showSlides((slideIndex -= 1))
+        }
+
+        $('.next').on('click', plusSlides);
+        $('.prev').on('click', prevSlides);
+
+        function showSlides(n) {
+            let slides = $('.mySlides');
+            if (n > $(slides).length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = $(slides).length
+            }
+            $(slides).fadeOut();
+            $(slides[slideIndex - 1]).fadeIn(2000);
+        };
+
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n))
+    }
+
+    var intervalId = setInterval(function () {
+        plusSlides(1);
+    }, 3000);
+
+    var slideshowContainer = $(".slideshow-container");
+    slideshowContainer.mouseover(stopSlideshow);
+    slideshowContainer.mouseout(startSlideshow);
+
+    function stopSlideshow() {
+        clearInterval(intervalId);
+    }
+
+    function startSlideshow() {
+        intervalId = setInterval(function () {
+            plusSlides(1);
+        }, 3000);
+    }
+
+    });
+
+    // with next and previous buttons
+        $(function () {
+        let imgs = $(".mySlides"),
+            totalImages = imgs.length,
+            delay = 5000,
+            slideNo = 0,
+            firstImage = imgs.eq(0).find("img"),
+            sliderInterval;
+
+        firstImage
+            .on("load", function () {
+                var imgHeight = imgs.eq(slideNo).find("img").height();
+                $(".slideshow-container").css("height", imgHeight + "px");
+            })
+            .each(function () {
+                if (this.complete) $(this).trigger("load");
+            });
+
+        function plusSlides() {
+            changeSlide((slideNo + 1));
+        }
+
+        function prevSlides() {
+            changeSlide((slideNo - 1));
+        }
+
+        $(".next").on("click", plusSlides);
+        $(".prev").on("click", prevSlides);
+
+        function startSlider() {
+            sliderInterval = setInterval(changeSlide, delay);
+        }
+
+        function stopSlider() {
+            clearInterval(sliderInterval);
+        }
+
+        startSlider();
+
+        $(window).on("resize", function () {
+            imgHeight = imgs.eq(slideNo).height();
+            $(".slideshow-container").css("height", imgHeight + "px");
+        });
+
+        $(window).on("blur", function () {
+            stopSlider();
+        });
+
+        $(window).on("focus", function () {
+            startSlider();
+        });
+
+        function changeSlide(n) {
+            imgs.eq(slideNo).slideUp(2000);
+            if (n !== undefined) {
+                slideNo = n;
+                if (slideNo > totalImages) {
+                    slideNo = 0;
+                }
+                if (slideNo < 0) {
+                    slideNo = totalImages;
+                }
+            } else {
+                slideNo++;
+                if (slideNo > totalImages) {
+                    slideNo = 0;
+                }
+                if (slideNo < 0) {
+                    slideNo = totalImages;
+                }
+            }
+
+            // imgs.hide();
+            imgs.eq(slideNo).fadeIn(2000);
+            // 
+        }
+        });
+    
+        // tbd ------------------------------
+            // $(function () {
+    //     const imgs = $('.mySlides'),
+    //         totalImages = imgs.length,
+    //         delay = 5000,
+    //         firstImage = imgs.eq(0).find('img');
+    //     let slideNo = 0;
+    //     let sliderInterval;
+
+    //     firstImage.on("load", function () {
+    //         const imgHeight = imgs.eq(slideNo).find('img').height();
+    //         $('.slideshow-container').css('height', imgHeight + 'px');
+    //     }).each(function () {
+    //         if (this.complete) $(this).trigger('load');
+    //     });
+
+    //     function startSlider() {
+    //         sliderInterval = setInterval(changeSlide, delay);
+    //     }
+
+    //     function stopSlider() {
+    //         clearInterval(sliderInterval);
+    //     }
+
+    //     startSlider();
+
+    //     $(window).on('resize', function () {
+    //         imgHeight = imgs.eq(slideNo).height();
+    //         $('.slideshow-container').css('height', imgHeight + 'px');
+    //     });
+
+    //     $(window).on('blur', function () {
+    //         stopSlider();
+    //     });
+
+    //     $(window).on('focus', function () {
+    //         startSlider();
+    //     });
+
+    //     function changeSlide() {
+    //         imgs.eq(slideNo).slideUp(1000);
+
+    //         slideNo++;
+    //         if (slideNo > totalImages) {
+    //             slideNo = 0;
+    //         }
+    //         if (slideNo < 1) {
+    //             slideNo = totalImages;
+    //         }
+    //         imgs.eq(slideNo).fadeIn(1000);
+    //     }
+    // });
