@@ -81,7 +81,7 @@ $(document).ready(function () {
             resizeTimer = setTimeout(function () {
                 const imgHeight = slides.eq(slideIndex).height();
                 $(".slideshow-container").css("height", imgHeight + "px");
-            }, 100);
+            }, 250);
         });
 
 
