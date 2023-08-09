@@ -631,4 +631,35 @@ div.item-list h3 {
         margin: 15px;
     }
 }
-/* ---------------------------------------------------TO DELETE SOON --------------------------------------------------------------------------*/
+/* --------------------------------------------------- NEW ARRIVALS --------------------------------------------------------------------------*/
+div.arrivals-text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: montserrat;
+    color: var(--md-custom-color-a)
+}
+div.new-arrivals{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
