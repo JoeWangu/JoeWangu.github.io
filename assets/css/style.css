@@ -11,6 +11,7 @@
     list-style: none;
     text-decoration: none !important;
     box-sizing: border-box;
+    font-family: montserrat;
 }
 
 .body-content{
@@ -22,6 +23,10 @@
 a {
     color: var(--md-custom-color-a);
     cursor: pointer;
+}
+
+p, .arrivals-text{
+    color: var(--md-custom-color-a);
 }
 
 svg{
@@ -190,7 +195,7 @@ li.bottom-nav-link .link-title {
     text-transform: uppercase;
     line-height: 18px;
     text-align: center;
-    font-family: montserrat;
+    /* font-family: montserrat; */
 }
 
 div.bottom-nav li.bottom-nav-link div.hide a {
@@ -613,8 +618,8 @@ div.item-list h3 {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-family: montserrat;
-    color: #303030;
+    /* font-family: montserrat; */
+    color: #303030!important;
     font-size: .9em;
 }
 
@@ -634,11 +639,12 @@ div.item-list h3 {
 /* --------------------------------------------------- NEW ARRIVALS --------------------------------------------------------------------------*/
 div.arrivals-text {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
-    font-family: montserrat;
-    color: var(--md-custom-color-a)
+    /* font-family: montserrat; */
+    /* color: var(--md-custom-color-a) */
 }
+
 div.new-arrivals{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -646,10 +652,92 @@ div.new-arrivals{
     margin: 10px;
 }
 
+@media screen and (min-width:880px) {
+    div.arrivals-text {
+        font-size: 3em;
+    }
+}
 
+/* --------------------------------------------------- CONTACT --------------------------------------------------------------------------*/
+div.contact{
+    /* background-color: #1f4e50; */
+    /* background-color: var(--md-sys-color-primary-container); */
+    margin: 10px;
+}
 
+div.contacts-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
+div.contacts-hide-small-screen{
+    display: none;
+}
 
+div.location{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+div.two-rivers, div.gateway, div.hours{
+    flex-basis: 300px;
+    /* width: 250px; */
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--md-sys-color-outline-variant);
+    /* margin-inline: auto; */
+}
+
+.mall-title{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div.two-rivers p, div.gateway p, div.hours p{
+    margin: 10px;
+}
+
+div.hours{
+    margin: 10px 0;
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+/* div.hours p{
+    text-align: center;
+} */
+
+div.social-icons div.icons{
+    width: max-content;
+    margin-inline: auto;
+}
+
+div.social-icons div.icons a{
+    padding: 10px;
+}
+
+@media screen and (max-width:510px) {
+    div.location{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.two-rivers, div.gateway, div.hours{
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    div.contacts-hide-small-screen{
+        display: block;
+    }
+}
+
+/* @media screen and (min-width:880px) {
+} */
 
 
 
