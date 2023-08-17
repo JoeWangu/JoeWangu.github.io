@@ -14,41 +14,63 @@
     font-family: montserrat;
 }
 
-.body-content{
+.body-content {
     display: block;
     max-width: 1200px;
     margin-inline: auto;
 }
 
-a {
+/* adaptive colors */
+a,
+span.themeIcon svg,
+div.side-menu-logo span svg {
     color: var(--md-custom-color-a);
     cursor: pointer;
 }
 
-p, .arrivals-text{
+p,
+div.arrivals-title,
+div.contacts-title,
+div.about-title,
+p.traits-title {
     color: var(--md-custom-color-a);
 }
 
-svg{
+/* titles */
+div.arrivals-title,
+div.contacts-title,
+div.about-title,
+p.traits-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* font-family: montserrat; */
+    /* color: var(--md-custom-color-a) */
+}
+
+/* svg styles */
+svg {
     width: 20px;
     height: 20px;
 }
 
-a.link-title svg{
+a.link-title svg {
     height: 12px;
 }
 
-nav.side-nav span.themeIcon svg{
+nav.side-nav span.themeIcon svg {
     width: 20px;
     height: 20px;
     margin: 10px;
     float: right;
 }
 
-li.bottom-nav-link .themeIcon svg{
+li.bottom-nav-link .themeIcon svg {
     width: 20px;
     height: 20px;
 }
+
 /* a:hover{
     color: var(--md-sys-color-primary-container);
     transition: .5s ease;
@@ -60,6 +82,7 @@ li.bottom-nav-link .themeIcon svg{
     font-family: Arial, sans-serif;
 } */
 
+/* theme icon */
 .themeIcon:hover {
     cursor: pointer;
 }
@@ -558,7 +581,7 @@ div.ad {
 }
 
 @media screen and (min-width:880px) {
-    .hero-wrapper{
+    .hero-wrapper {
         display: flex;
         gap: 10px;
         margin: 10px 20px;
@@ -619,7 +642,7 @@ div.item-list h3 {
     text-align: center;
     text-transform: uppercase;
     /* font-family: montserrat; */
-    color: #303030!important;
+    color: #303030 !important;
     font-size: .9em;
 }
 
@@ -636,16 +659,9 @@ div.item-list h3 {
         margin: 15px;
     }
 }
-/* --------------------------------------------------- NEW ARRIVALS --------------------------------------------------------------------------*/
-div.arrivals-text {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    /* font-family: montserrat; */
-    /* color: var(--md-custom-color-a) */
-}
 
-div.new-arrivals{
+/* --------------------------------------------------- NEW ARRIVALS --------------------------------------------------------------------------*/
+div.new-arrivals {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -659,28 +675,30 @@ div.new-arrivals{
 }
 
 /* --------------------------------------------------- CONTACT --------------------------------------------------------------------------*/
-div.contact{
+div.contact {
     /* background-color: #1f4e50; */
     /* background-color: var(--md-sys-color-primary-container); */
     margin: 10px;
 }
 
-div.contacts-wrapper{
+div.contacts-wrapper {
     display: flex;
     justify-content: center;
 }
 
-div.contacts-hide-small-screen{
+div.contacts-hide-small-screen {
     display: none;
 }
 
-div.location{
+div.location {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-div.two-rivers, div.gateway, div.hours{
+div.two-rivers,
+div.gateway,
+div.hours {
     flex-basis: 300px;
     /* width: 250px; */
     height: 200px;
@@ -690,16 +708,18 @@ div.two-rivers, div.gateway, div.hours{
     /* margin-inline: auto; */
 }
 
-.mall-title{
+.mall-title {
     text-align: center;
     font-size: 1.2em;
 }
 
-div.two-rivers p, div.gateway p, div.hours p{
+div.two-rivers p,
+div.gateway p,
+div.hours p {
     margin: 10px;
 }
 
-div.hours{
+div.hours {
     margin: 10px 0;
     text-align: center;
     max-width: 600px;
@@ -710,44 +730,239 @@ div.hours{
     text-align: center;
 } */
 
-div.social-icons div.icons{
+div.social-icons div.icons {
     width: max-content;
+    /* height: 40px; */
     margin-inline: auto;
 }
 
-div.social-icons div.icons a{
+div.social-icons div.icons a {
     padding: 10px;
 }
 
+div.social-icons div.icons svg {
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+}
+
 @media screen and (max-width:510px) {
-    div.location{
+    div.location {
         flex-direction: column;
         text-align: center;
     }
 
-    div.two-rivers, div.gateway, div.hours{
+    div.two-rivers,
+    div.gateway,
+    div.hours {
         flex-basis: 100px;
     }
 }
 
 @media screen and (min-width:1000px) {
-    div.contacts-hide-small-screen{
+    div.contacts-hide-small-screen {
         display: block;
     }
 }
 
 /* @media screen and (min-width:880px) {
 } */
+/* --------------------------------------------------- ABOUT --------------------------------------------------------------------------*/
+div.about-wrapper {
+    padding: 10px;
+}
 
+div.about-traits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+}
 
+p.traits-title {
+    font-size: 1.5em;
+}
 
+div.traits h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
 
+div.traits {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    max-width: 800px;
+}
 
+div.traits img {
+    padding: 10px 0;
+    height: 270px;
+}
 
+@media screen and (min-width:650px) {
+    div.about-traits {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+/* ------------------------------------------------------------------------------------------------------------------ 
+.                                                            FOOTER SECTION
+---------------------------------------------------------------------------------------------------------------------- */
+.footer {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    justify-content: space-evenly;
+}
 
+.footer-contact {
+    line-height: 3em;
+}
 
+.form form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+input,
+button {
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1em;
+    /* max-width: 200px; */
+}
 
+/* label{
+    max-width: 190px;
+} */
 
+.form .name {
+    flex-grow: 1;
+    flex-basis: 120px;
+    /* max-width: min-content; */
+}
 
+.form .email {
+    flex-grow: 3;
+    flex-basis: 170px;
+}
+
+.form button {
+    flex-grow: 1;
+    flex-basis: 70px;
+    max-width: 150px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #4e4e4e;
+}
+
+.form button:hover {
+    color: #fad02c;
+}
+
+.copyright {
+    font-size: .9em;
+    margin-top: 50px;
+}
+
+.footer .social-media-icons ul {
+    /* line-height: 2em; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-contact-title,
+.form h3 {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer .social-media-icons ul {
+        flex-direction: row;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer {
+        /* flex-direction: column; */
+        height: 250px;
+        justify-content: space-between;
+    }
+
+    /* .footer .social-media-icons{
+        align-self: flex-end;
+    } */
+    .footer-contact {
+        line-height: 2em;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    /* .footer .social-media-icons{
+        align-self: auto;
+    } */
+    .footer .social-media-icons ul {
+        /* display: flex; */
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    /* .footer-contact{
+        line-height: 2em;
+    } */
+    .copyright {
+        /* position: absolute; */
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    input {
+        max-width: 200px;
+    }
+
+    /* .form .name {
+        flex-shrink: 0;
+    }
+    
+    .form .email {
+        flex-shrink: 0;
+    }
+    
+    .form button {
+        flex-shrink: 0;
+    } */
+}
+
+@media screen and (max-width: 437px) {
+    .form form {
+        max-width: 200px;
+    }
+
+    .copyright {
+        margin-top: 180px;
+    }
+}
+
+/* .form .name {
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: min-content;
+} */
