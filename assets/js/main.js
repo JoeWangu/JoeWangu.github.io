@@ -64,11 +64,11 @@ $(document).ready(function () {
         $('#side-menu .x').on(clickevent, function () {
             close();
         });
-        $(document).click(function () {
-            if (items.hasClass('open')) {
-                close();
-            }
-        });
+        // $(document).click(function () {
+        //     if (items.hasClass('open')) {
+        //         close();
+        //     }
+        // });
 
     });
 });
