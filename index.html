@@ -1,107 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#">Contacts</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-        </ul>
-    </nav>
-
-    <section id="hero">
-        <div class="hero">
-            <img src="./img/portimage.jpg" alt="portfolio image">
-            <div class="hero-content">
-                <h1>Welcome to my portfolio</h1>
-                <p>"Creative. Passionate. Driven. Welcome to my world of design and innovation.
-
-                    I am Joe Wambugu, a dynamic and versatile creator with a relentless commitment to crafting
-                    meaningful experiences. With a fusion of artistic vision and technical expertise, I breathe life
-                    into ideas, turning concepts into captivating realities.
-
-                    From pixel-perfect designs to immersive user interfaces, I thrive on pushing boundaries and
-                    exceeding expectations. With a keen eye for detail and a deep understanding of user-centric design
-                    principles, I transform visions into impactful solutions that resonate with audiences.
-
-                    My journey is fueled by curiosity, fueled by a relentless pursuit of excellence. Whether I'm shaping
-                    brands, building digital experiences, or crafting compelling narratives, I approach each project
-                    with enthusiasm and dedication.
-
-                    Join me on a journey where creativity knows no bounds. Together, let's bring visions to life and
-                    make a lasting impact in the digital landscape."
-                </p>
-                <button>See More</button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Welcome to my Portfolio</h1>
+                <h3 class="mb-5"><em>Feel free to contact me anytime</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
             </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about">
-            <img src="./img/portimage.jpg" alt="">
-            <div class="about-content">
-                <h1>About Me</h1>
-                <p>Hello there, curious minds!
-    
-                    I'm Joe Wambugu, a creative soul on a mission to make waves in the world of web development.
-                    With a background in Computer Science, I've honed my skills and cultivated a
-                    unique perspective that drives my passion for innovation.
-    
-                    My journey into web development started with a simple fascination for beautifully made sites. Since then, I've embarked on a quest to explore the boundless possibilities within this
-                    dynamic realm.
-    
-                    What sets me apart is my insatiable thirst for knowledge and my unwavering commitment to growth. Every
-                    project is an opportunity to learn, to evolve, and to challenge the status quo. Whether it's through
-                    full stack development or responsive design, I'm always pushing myself to reach new heights of creativity.
-    
-                    But beyond the pixels and lines of code lies a deeper purpose. I believe in the power of human centered design, collaboration and transparency, and I strive to infuse every endeavor with meaning and purpose.
-    
-                    When I'm not immersed in my work, you'll often find me reading an article, coding or swimming.
-                    These experiences not only fuel my creativity but also remind me of the beauty and wonder that surrounds
-                    us.
-    
-                    Join me as we embark on this journey together. Let's defy expectations, break boundaries, and craft a
-                    future limited only by our imagination.
-                </p>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Contact me for your next project!</h2>
+                        <p class="lead mb-5">
+                            I am Creative, Passionate and Driven. Welcome to my world of design and innovation.
+                        </p>
+                        <a class="btn btn-dark btn-xl" href="#services">What I Offer</a>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Services</h3>
+                    <h2 class="mb-5">What I Offer</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Web Dev</strong></h4>
+                        <p class="text-faded mb-0">For front end oriented sites</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>Mobile Dev</strong></h4>
+                        <p class="text-faded mb-0">Native and Flutter projects</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>Favorited</strong></h4>
+                        <p class="text-faded mb-0">
+                            Millions of users like
+                            <i class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>Question</strong></h4>
+                        <p class="text-faded mb-0">I mustache you a question...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Welcome to
+                    <em>your</em>
+                    next website!
+                </h2>
+                <a class="btn btn-primary btn-xl" href="#!">Get Now!</a>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://joel-009.github.io/" target="_blank">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Another portfolio website</div>
+                                    <p class="mb-0">Check out my other porfolio made from scratch</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="./lockwood/index.html" target="_blank">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">A furniture store website</div>
+                                    <p class="mb-0">My special website where you can find some lovely furniture</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Fitness Tracking Mobile App</div>
+                                    <p class="mb-0">An app to help you track your progress and crush your goals.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Augmented Reality Game</div>
+                                    <p class="mb-0">Unleash hidden creatures in your own backyard!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <!-- <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section> -->
+        <!-- Map-->
+        <div class="map" id="contact">
+            <!-- <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35869044185!2d36.68258006256384!3d-1.302860280899637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1709464190576!5m2!1sen!2ske" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br />
+            <!-- <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small> -->
         </div>
-    </section>
-
-    <section id="projects">
-        <div class="projects">
-            <h2>Projects</h2>
-    <ul>
-        <li>Portfolio Website Redesign</li>
-        <li>E-commerce Website for Local Artisans</li>
-        <li>Mobile App for Fitness Tracking</li>
-        <li>Branding and Packaging Design for Organic Food Startup</li>
-        <li>Interactive Infographic on Climate Change</li>
-        <li>UI/UX Redesign for Banking Application</li>
-        <li>Augmented Reality Game for Education</li>
-        <li>Responsive Website for Sustainable Fashion Brand</li>
-        <li>Illustrated Children's Book</li>
-        <li>Virtual Reality Experience for Tourism Promotion</li>
-        <li>A <a href="./lockwood/index.html">furniture</a> store website</li>
-        <li>A <a href="https://joel-009.github.io/">portfolio</a> website</li>
-    </ul>
-        </div>
-    </section>
-</body>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/joe-w-2a8a85106/"><i class="icon-social-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/JoeWangu"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; My Portfolio 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
