@@ -1,0 +1,41 @@
+@import url('themes.css');
+/* @import url('common.css'); */
+
+/*--------------------------------------------------------------
+# Container Section
+--------------------------------------------------------------*/
+#bookings, #packages,
+#game, #transfers,
+#beach, #mountain,
+#ticketing, #visa,
+#travel, #tours,
+#sports, #team{
+    margin: 10px;
+}
+
+.container-body{
+    margin-top: 90px;
+}
+
+/* .safari-container{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 20px 15px; */
+    /* gap: 20px; */
+    /* width: 80%; */
+/* } */
+
+/* @media (max-width: 850px) {
+    .safari-container{
+        flex-direction: column;
+        padding: 5px;
+    }
+} */
+
+/* @media (min-width: 850px) {
+    .container-body>section:nth-child(odd)>.safari-container{
+        flex-direction: row-reverse;
+    }
+} */
