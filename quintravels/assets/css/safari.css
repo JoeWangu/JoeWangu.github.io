@@ -17,6 +17,12 @@
     margin-top: 90px;
 }
 
+.safari-container div.col-md-7 h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 /* .safari-container{ */
     /* display: flex; */
     /* flex-direction: row; */

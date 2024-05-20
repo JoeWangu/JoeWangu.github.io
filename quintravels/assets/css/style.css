@@ -407,7 +407,8 @@ h6 {
     background: rgba(255, 255, 255, 0.1);
     /* color: #fff; */
     color: var(--bs-body-bg);
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: 1.6rem;
     padding: 10px 30px;
     margin-bottom: 30px;
     border-radius: 50px;
@@ -415,7 +416,8 @@ h6 {
 
 #hero h1 {
     margin: 0 0 10px 0;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
@@ -426,15 +428,25 @@ h6 {
 #hero h2 {
     /* color: #eee; */
     color: var(--bs-body-bg);
-    margin-bottom: 40px;
-    font-size: 24px;
+    margin-bottom: 20px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+}
+
+#hero h5 {
+    /* color: #eee; */
+    color: var(--bs-body-bg);
+    /* margin-bottom: 40px; */
+    /* font-size: 24px; */
+    font-size: 1.3rem;
 }
 
 #hero .btn-get-started {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 0.8rem;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 30px 9px 30px;
@@ -461,16 +473,19 @@ h6 {
 
 @media (max-width: 768px) {
     #hero h3 {
-        font-size: 22px;
+        /* font-size: 22px; */
+        font-size: 1.3rem;
     }
 
     #hero h1 {
-        font-size: 28px;
+        /* font-size: 28px; */
+        font-size: 2.25rem;
         line-height: 36px;
     }
 
     #hero h2 {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 1.2rem;
         line-height: 24px;
         margin-bottom: 30px;
     }
@@ -1014,28 +1029,27 @@ section {
     transition: 0.3s;
 }
 
+#footer .social-links .twitter-x{
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
 #footer .social-links a:hover {
-    /* background: #d01d3f; */
-    /* color: #fff; */
     text-decoration: none;
 }
 
-#footer .social-links .twitter:hover {
-    background: #1dd0d0;
-    /* background: var(--bs-link-color); */
+#footer .social-links .twitter-x:hover {
+    background: #1da1f2;
 }
 
 #footer .social-links .facebook:hover {
-    /* background: #1d71d0; */
-    background: var(--bs-blue);
+    background: #1877f2;
 }
 
 #footer .social-links .instagram:hover {
-    /* background: #d01d4a; */
-    background: var(--bs-pink);
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f58529);
 }
 
 #footer .social-links .linkedin:hover {
-    /* background: #00a7d1; */
-    background: var(--bs-blue);
+    background: #0a66c2;
 }

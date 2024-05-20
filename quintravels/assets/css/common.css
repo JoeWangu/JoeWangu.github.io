@@ -550,28 +550,27 @@ img{
     transition: 0.3s;
 }
 
+#footer .social-links .twitter-x{
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
 #footer .social-links a:hover {
-    /* background: #d01d3f; */
-    /* color: #fff; */
     text-decoration: none;
 }
 
-#footer .social-links .twitter:hover {
-    background: #1dd0d0;
-    /* background: var(--bs-link-color); */
+#footer .social-links .twitter-x:hover {
+    background: #1da1f2;
 }
 
 #footer .social-links .facebook:hover {
-    /* background: #1d71d0; */
-    background: var(--bs-blue);
+    background: #1877f2;
 }
 
 #footer .social-links .instagram:hover {
-    /* background: #d01d4a; */
-    background: var(--bs-pink);
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f58529);
 }
 
 #footer .social-links .linkedin:hover {
-    /* background: #00a7d1; */
-    background: var(--bs-blue);
+    background: #0a66c2;
 }
