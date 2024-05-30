@@ -1,8 +1,9 @@
 :root,
 [data-bs-theme=light] {
-    --bs-buttons: #005d9b;
-    --bs-buttons-hover: #0099ff;
-    --bs-blue: #0d6efd;
+    --bs-buttons: #0099ff;
+    --bs-buttons-hover: #6ad5ff;
+    --bs-blue: #0099ff;
+    --bs-brand-color: #87CEEB;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -123,6 +124,9 @@
 
 [data-bs-theme=dark] {
     color-scheme: dark;
+    --bs-brand: #87CEEB;
+    --bs-buttons: #87CEEB;
+    --bs-buttons-hover: #0099ff;
     --bs-body-color: #dee2e6;
     --bs-body-color-rgb: 222, 226, 230;
     --bs-body-bg: #212529;
