@@ -516,21 +516,37 @@ section.about .icon-boxes .col-md-6:nth-child(2) .icon-box,
 
 .footer__top__social a {
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     /* color: #ffffff; */
     color: var(--bs-white);
     height: 40px;
     width: 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    line-height: 44px;
+    line-height: 40px;
     text-align: center;
-    margin-right: 6px;
+    /* margin-right: 6px; */
 }
 
-.footer__top__social a:last-child {
-    margin-right: 0;
+.footer__top__social i.bi-facebook:hover {
+    color: #3b5998;
 }
+
+.footer__top__social i.bi-twitter-x:hover {
+    color: #1da1f2;
+}
+
+.footer__top__social i.bi-instagram:hover {
+    color: #e1306c;
+}
+
+.footer__top__social i.bi-youtube:hover {
+    color: #ff0000;
+}
+
+/* .footer__top__social a:last-child {
+    margin-right: 0;
+} */
 
 .footer__option {
     padding-bottom: 35px;
