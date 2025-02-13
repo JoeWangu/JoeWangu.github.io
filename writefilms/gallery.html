@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/vendor/aos-master/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
 </head>
 
 <body>
@@ -66,10 +67,40 @@
     <main>
         <!-- Gallery Section -->
         <section id="gallery-section" class="gallery section">
-
-            <!-- <div class="container" data-aos="fade-up" data-aos-delay="100"> -->
             <div class="container text-center">
-                <h1>COMING SOON</h1>
+                <!-- <h1>COMING SOON</h1> -->
+                <!-- <h2 class="section-title">Gallery</h2> -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="btn-group" role="group" aria-label="Gallery Categories">
+                            <button type="button" class="btn btn-primary" onclick="filterGallery('all')">All</button>
+                            <button type="button" class="btn btn-secondary" onclick="filterGallery('weddings')">Weddings</button>
+                            <button type="button" class="btn btn-secondary" onclick="filterGallery('events')">Events</button>
+                            <button type="button" class="btn btn-secondary" onclick="filterGallery('portraits')">Portraits</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4" id="gallery">
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item weddings">
+                        <img src="./assets/img/bg.jpg" class="img-fluid" alt="Wedding 1">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item events">
+                        <img src="./assets/img/bg1.jpg" class="img-fluid" alt="Event 1">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item portraits">
+                        <img src="./assets/img/bg2.jpg" class="img-fluid" alt="Portrait 1">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item weddings">
+                        <img src="assets/img/bg2.jpg" class="img-fluid" alt="Wedding 2">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item events">
+                        <img src="assets/img/bg1.jpg" class="img-fluid" alt="Event 2">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3 gallery-item portraits">
+                        <img src="assets/img/bg.jpg" class="img-fluid" alt="Portrait 2">
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Gallery Section End -->
@@ -161,6 +192,15 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- JS -->
+<script src="./assets/vendor/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/aos-master/dist/aos.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/gallery.js"></script>
 </body>
 
 </html>
