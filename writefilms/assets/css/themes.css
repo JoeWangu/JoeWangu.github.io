@@ -9,6 +9,7 @@
 :root,
 [data-bs-theme=light] {
     --bs-buttons: #357DED;
+    /* --bs-buttons: #1c166a; */
     /* --bs-buttons-hover: #B24C63; */
     /* --bs-buttons-hover: #DCC48E; */
     --bs-buttons-hover: #0099ff;
